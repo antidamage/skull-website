@@ -37,17 +37,18 @@ export default function RootLayout({
             <header className="pt-10">
 
               <div className="flex grow landscape:items-center">
-                <object data="/i/logo.svg" type="image/svg+xml" className="size-4/12">
-                  <Image
-                    src="/i/logo.png"
-                    alt="Skull.nz"
-                    width={300}
-                    height={200}
-                  />
-                </object>
+                <object data="/i/logo05.svg" type="image/svg+xml" className="size-4/10" />
               </div>
 
               <Menu />
+
+              <Image
+                src="/i/skull-slow.gif"
+                alt=""
+                width={400}
+                height={400}
+                className="ml-auto mr-auto"
+              />
 
             </header>
 

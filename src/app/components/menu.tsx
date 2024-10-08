@@ -7,7 +7,7 @@ const poppins = Poppins({ subsets: ['latin'], weight: ["400"], variable: '--font
 
 export default function Menu() {
     return <nav className="flex items-center mx-auto">
-        <div className={`flex flex-wrap text-xl tracking-widest shadow-sm bg-slate-800 space-x-10 pe-4 ps-4 portrait:object-contain ${poppins.className}`}>
+        <div className={`flex flex-wrap text-xl tracking-widest shadow-sm bg-gray-700 space-x-10 pe-4 ps-4 portrait:object-contain ${poppins.className}`}>
 
             <MenuItem slug="VideoGames" name="Video Games" />
             <MenuItem slug="MarketplaceAssets" name="Marketplace Assets" />

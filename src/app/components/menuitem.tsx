@@ -18,8 +18,9 @@ export default function MenuItem({ slug, name }: { slug: string, name: string })
                 mx-10
                 portrait:p-2
                 portrait:ml-10
-                [&.active]:bg-slate-700
-                rounded-lg
+                [&.active]:bg-gray-200
+                [&.active]:text-gray-700
+                rounded
                 pl-1
                 pr-1
                 ${baseRoute === "/" + slug ? 'active' : ''}

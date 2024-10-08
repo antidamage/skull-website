@@ -14,7 +14,7 @@ export default function HireAddie({ }: {}) {
             width={300}
             height={500}
             alt="Adeline Cook"
-            className="flex-inline ps-10 object-cover"
+            className="flex-inline ml-10 object-cover rounded"
         />
         <p className={`max-w-prose text-pretty ps-10 tracking-widest text-s font-thin ${poppins.className}`}>
             Adeline is a game developer who is all about turning caffeine and code into epic adventures. With over a decade of Unreal Engine wizardry, she's here to make your game dreams come true — whether it's crafting jaw-dropping mechanics, fine-tuning immersive worlds, or bringing those “wouldn't it be cool if...” moments to life. Let's team up and create something unforgettable. Ready to hit start? 🎮✨

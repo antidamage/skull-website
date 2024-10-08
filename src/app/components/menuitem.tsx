@@ -16,6 +16,10 @@ export default function MenuItem({ slug, name }: { slug: string, name: string })
         <a href={`/${slug}`} className={`
                 text-nowrap
                 mx-10
+                portrait:p-2
+                portrait:ml-10
+                [&.active]:bg-slate-700
+                rounded-lg
                 ${baseRoute === "/" + slug ? 'active' : ''}
             `}>{name}</a >
     </>);

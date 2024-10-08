@@ -23,9 +23,9 @@ export default function HireAddie({ }: {}) {
             Addie is also a talented web developer who regularly runs the gamut of dev-ops, server admin, database admin, frontend and backend.
             <br /><br />
 
-            <a className="font-extrabold text-base text-nowrap content-baseline" href="https://docs.google.com/document/d/1TZotQfqw4h_oAkPLhlSFk2TJ6eQkrNEJ1GGCGape8cA/edit?usp=sharing">
+            <a className="flex flex-nowrap align-baseline text-lg font-bold" href="https://docs.google.com/document/d/1TZotQfqw4h_oAkPLhlSFk2TJ6eQkrNEJ1GGCGape8cA/edit?usp=sharing">
                 Adeline Cook - Curriculum Vitae
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6 inline ml-1 pb-1">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-7 flex flex-nowrap ml-2 text-nowrap">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M9 8.25H7.5a2.25 2.25 0 0 0-2.25 2.25v9a2.25 2.25 0 0 0 2.25 2.25h9a2.25 2.25 0 0 0 2.25-2.25v-9a2.25 2.25 0 0 0-2.25-2.25H15M9 12l3 3m0 0 3-3m-3 3V2.25" />
                 </svg>
             </a>

@@ -9,7 +9,7 @@ export default function Contact({ }: {}) {
                     <a href="tel:+64212700222">+64 21 2700 222</a></p>
 
                 <div className="flex inline mt-5">
-                    <div className="ps-10 leading-none tracking-tight font-bold text-2x1 text-nowrap">
+                    <div className="ps-10 leading-none tracking-tight font-bold text-lg text-nowrap">
                         <div>
                             <a href="https://discord.gg/RAEJEhW" className="flex flex-nowrap align-baseline text-lg">
                                 Discord

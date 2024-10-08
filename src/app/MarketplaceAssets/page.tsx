@@ -2,7 +2,7 @@ import Title from '../components/title';
 
 export default function MarketplaceAssets() {
     return (<>
-        <ul className="ps-10 leading-none tracking-tight font-bold text-2x1 text-nowrap">
+        <ul className="ps-10 leading-none tracking-tight font-bold text-lg text-nowrap">
             <li>Cel Shader Lite</li>
             <li>Cel Shader Essentials</li>
             <li>Advanced Optics</li>

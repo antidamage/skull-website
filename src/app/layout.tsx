@@ -41,6 +41,8 @@ export default function RootLayout({
                   <Image
                     src="/i/logo.png"
                     alt="Skull.nz"
+                    width={300}
+                    height={200}
                   />
                 </object>
               </div>

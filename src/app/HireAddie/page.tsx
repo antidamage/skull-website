@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Title from '../components/title';
 
 import { Roboto } from 'next/font/google';
 const roboto = Roboto({ subsets: ['latin'], weight: ["400"], variable: '--font-poppins' });
@@ -15,8 +16,11 @@ export default function HireAddie({ }: {}) {
             alt="Adeline Cook"
             className="flex-inline ps-10 object-cover"
         />
-        <p className={`text-pretty ps-10 tracking-widest text-s font-thin ${poppins.className}`}>
+        <p className={`max-w-prose text-pretty ps-10 tracking-widest text-s font-thin ${poppins.className}`}>
             Addie is a game developer who is all about turning caffeine and code into epic adventures. With over a decade of Unreal Engine wizardry, she's here to make your game dreams come true — whether it's crafting jaw-dropping mechanics, fine-tuning immersive worlds, or bringing those “wouldn't it be cool if...” moments to life. Let's team up and create something unforgettable. Ready to hit start? 🎮✨
+            <br /><br />
+
+            Addie is also a talented web developer who regularly runs the gamut of dev-ops, server admin, database admin, frontend and backend.
             <br /><br />
 
             <a className="font-extrabold text-base text-nowrap content-baseline" href="https://docs.google.com/document/d/1TZotQfqw4h_oAkPLhlSFk2TJ6eQkrNEJ1GGCGape8cA/edit?usp=sharing">
@@ -26,6 +30,6 @@ export default function HireAddie({ }: {}) {
                 </svg>
             </a>
         </p>
-        <h1 className="mb-4 font-extrabold leading-none tracking-tight text-4xl text-nowrap ps-10 pe-2">Hire Addie</h1>
+        <Title name="Hire Addie" />
     </>);
 }   

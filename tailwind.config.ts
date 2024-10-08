@@ -21,7 +21,7 @@ const config: Config = {
       },
       spacing: {
         '100': '190px',
-        'spacetop': '20%',
+        'spacetop': '20vh',
       },
       screens: {
         'portrait': {

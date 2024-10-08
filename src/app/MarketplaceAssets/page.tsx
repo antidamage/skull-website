@@ -1,3 +1,5 @@
+import Title from '../components/title';
+
 export default function MarketplaceAssets() {
     return (<>
         <ul className="ps-10 leading-none tracking-tight font-bold text-2x1 text-nowrap">
@@ -9,6 +11,6 @@ export default function MarketplaceAssets() {
             <li>Advanced Fur Shader</li>
             <li>Advanced Space Shader</li>
         </ul>
-        <h1 className="mb-4 font-extrabold leading-none tracking-tight text-4xl text-nowrap ps-10 pe-2">Marketplace Assets</h1>
+        <Title name="Marketplace Assets" />
     </>)
 }

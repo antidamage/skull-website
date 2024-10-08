@@ -47,7 +47,7 @@ export default function RootLayout({
                 alt=""
                 width={400}
                 height={400}
-                className="ml-auto mr-auto"
+                className="ml-auto"
               />
 
             </header>

@@ -4,7 +4,7 @@ import { usePathname } from 'next/navigation';
 import { Poppins } from 'next/font/google';
 const poppins = Poppins({ subsets: ['latin'], weight: ["400"], variable: '--font-poppins' });
 
-export default function MenuItem({ slug, name }: { slug: string, name: string }) {
+export default function MenuItem({ slug, name, highlight }: { slug: string, name: string, highlight: string }) {
     const baseRoute = GetBaseRoute();
 
     function GetBaseRoute() {
@@ -18,8 +18,8 @@ export default function MenuItem({ slug, name }: { slug: string, name: string })
                 mx-10
                 portrait:p-2
                 portrait:ml-10
-                [&.active]:bg-gray-200
                 [&.active]:text-gray-700
+                [&.active]:bg-gray-200
                 rounded
                 pl-1
                 pr-1

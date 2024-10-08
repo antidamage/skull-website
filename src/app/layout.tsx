@@ -42,13 +42,15 @@ export default function RootLayout({
 
               <Menu />
 
-              <Image
-                src="/i/skull-slow.gif"
-                alt=""
-                width={400}
-                height={400}
-                className="mr-auto scale-x-[-1]"
-              />
+              <div className="relative">
+                <Image
+                  src="/i/skull-slow.gif"
+                  alt=""
+                  width={400}
+                  height={400}
+                  className="absolute mr-auto scale-x-[-1] opacity-20"
+                />
+              </div>
 
             </header>
 

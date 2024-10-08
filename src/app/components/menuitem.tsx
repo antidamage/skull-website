@@ -5,9 +5,9 @@ import { Poppins } from 'next/font/google';
 const poppins = Poppins({ subsets: ['latin'], weight: ["400"], variable: '--font-poppins' });
 
 export default function MenuItem({ slug, name }: { slug: string, name: string }) {
-    const baseRoute = getBaseRoute();
+    const baseRoute = GetBaseRoute();
 
-    function getBaseRoute() {
+    function GetBaseRoute() {
         const paths = usePathname().split('/').filter(Boolean);
         return `/${paths[0]}`;
     }

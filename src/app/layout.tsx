@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import Link from 'next/link';
+
+import Image from 'next/image';
 import Menu from './components/menu';
 
 import { Inter } from "next/font/google";
@@ -37,7 +38,10 @@ export default function RootLayout({
 
               <div className="flex grow landscape:items-center">
                 <object data="/i/logo.svg" type="image/svg+xml" className="size-4/12">
-                  <img src="/i/logo.png" />
+                  <Image
+                    src="/i/logo.png"
+                    alt="Skull.nz"
+                  />
                 </object>
               </div>
 

@@ -1,3 +1,3 @@
 Due to mostly focusing on game dev, I don't have any web projects I can share online anymore! Accordingly this is a sample Next.js, React and TailWind CSS project for potential employers to persure and confirm that yes, I can actually do frontend development.
 
-Please enjoy looking through the source.
+Please enjoy browsing and critiquing the source.

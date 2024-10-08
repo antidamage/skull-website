@@ -4,7 +4,7 @@ export default function Contact({ }: {}) {
     return (<>
         <div className="flex block">
             <div className="">
-                <p className="ps-10 tracking-tight font-bold text-2xl text-nowrap flex-nowrap">Adeline Cook<br />
+                <p className="ps-10 leading-none tracking-tight font-bold text-2xl text-nowrap flex-nowrap">Adeline Cook<br />
                     <a className="hover:text-emerald-200 text-nowrap flex-nowrap flex-inline" href="mailto:adeline@skull.nz">
                         adeline@skull.nz
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6 inline ml-5">

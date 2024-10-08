@@ -20,7 +20,7 @@ const config: Config = {
         Poppins: ['Poppins', 'sans-serif', '"Apple Color Emoji"'],
       },
       spacing: {
-        '100': '190px',
+        '100': '210px',
         'spacetop': '20vh',
       },
       screens: {

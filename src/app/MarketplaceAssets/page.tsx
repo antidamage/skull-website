@@ -1,8 +1,6 @@
 export default function MarketplaceAssets() {
-    return <>
-        <h1 className="mb-4 font-extrabold leading-none tracking-tight lg:text-4xl">Marketplace Assets</h1>
-
-        <ul>
+    return (<>
+        <ul className="ps-10 leading-none tracking-tight font-bold text-2x1 text-nowrap">
             <li>Cel Shader Lite</li>
             <li>Cel Shader Essentials</li>
             <li>Advanced Optics</li>
@@ -11,5 +9,6 @@ export default function MarketplaceAssets() {
             <li>Advanced Fur Shader</li>
             <li>Advanced Space Shader</li>
         </ul>
-    </>
+        <h1 className="mb-4 font-extrabold leading-none tracking-tight text-4xl text-nowrap ps-10 pe-2">Marketplace Assets</h1>
+    </>)
 }

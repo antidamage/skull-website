@@ -30,23 +30,25 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="flex flex-grow h-full">
+        <div className="flex landscape:grow landscape:items-center landscape:mt-spacetop">
 
-          <header className="pt-10">
+          <div className="flex portrait:inline">
+            <header className="pt-10">
 
-            <div className="flex items-center mx-auto">
-              <object data="/i/logo.svg" type="image/svg+xml" className="size-4/12">
-                <img src="/i/logo.png" />
-              </object>
-            </div>
+              <div className="flex grow landscape:items-center">
+                <object data="/i/logo.svg" type="image/svg+xml" className="size-4/12">
+                  <img src="/i/logo.png" />
+                </object>
+              </div>
 
-            <Menu />
+              <Menu />
 
-          </header>
+            </header>
 
-          <main className="flex-grow">
-            {children}
-          </main>
+            <main className="flex 1 items-top mt-100">
+              {children}
+            </main>
+          </div>
 
         </div >
 

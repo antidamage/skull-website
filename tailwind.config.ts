@@ -18,6 +18,18 @@ const config: Config = {
         Sedgwick_Ave: ['Sedgwick Ave', 'sans-serif', '"Apple Color Emoji"'],
         Rock_Salt: ['Rock Salt', 'sans-serif', '"Apple Color Emoji"'],
         Poppins: ['Poppins', 'sans-serif', '"Apple Color Emoji"'],
+      },
+      spacing: {
+        '100': '190px',
+        'spacetop': '20%',
+      },
+      screens: {
+        'portrait': {
+          'raw': '(orientation: portrait)'
+        },
+        'landscape': {
+          'raw': '(orientation: landscape)'
+        }
       }
     }
   },

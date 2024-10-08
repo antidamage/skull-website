@@ -13,7 +13,13 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
-    },
+      fontFamily: {
+        Protest_Guerrilla: ['Protest Guerrilla', 'sans-serif', '"Apple Color Emoji"'],
+        Sedgwick_Ave: ['Sedgwick Ave', 'sans-serif', '"Apple Color Emoji"'],
+        Rock_Salt: ['Rock Salt', 'sans-serif', '"Apple Color Emoji"'],
+        Poppins: ['Poppins', 'sans-serif', '"Apple Color Emoji"'],
+      }
+    }
   },
   plugins: [],
 };

@@ -1,29 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+
+@font-face {
+  font-family: "DonGraffiti";
+  src: url("/f/DonGraffiti.woff2") format("woff2")
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+  --foreground-rgb: 200, 200, 200;
+  --background-start-rgb: 20, 20, 20;
+  --background-end-rgb: 30, 30, 30;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+  --home: rgba(0, 255, 110, 1.0);
+  --marketplace: rgba(255, 0, 191, 1.0);
+  --hireme: rgba(153, 255, 0, 1.0);
+
+  --corner-rounding: 5px;
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
 
 @layer utilities {

@@ -38,3 +38,12 @@ body {
 /* a:hover {
   color: rgb(166, 255, 0);
 } */
+
+* {
+  cursor: default;
+  user-select: none;
+}
+
+a {
+  cursor: pointer;
+}

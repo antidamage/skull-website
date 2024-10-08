@@ -10,6 +10,7 @@ export default function MarketplaceAssets() {
             <li>Advanced Glass Shader</li>
             <li>Advanced Fur Shader</li>
             <li>Advanced Space Shader</li>
+            <li>(coming soon...)</li>
         </ul>
         <Title name="Marketplace Assets" />
     </>)

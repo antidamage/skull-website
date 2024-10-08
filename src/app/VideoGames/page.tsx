@@ -7,6 +7,7 @@ export default function VideoGames() {
             <li>Solitaire Knights</li>
             <li>Apollo Marine Park</li>
             <li>Springmancer</li>
+            <li>(coming soon...)</li>
         </ul>
         <Title name="Video Games" />
     </>)

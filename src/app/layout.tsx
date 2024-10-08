@@ -48,7 +48,7 @@ export default function RootLayout({
                   alt=""
                   width={400}
                   height={400}
-                  className="absolute mr-auto scale-x-[-1] opacity-20"
+                  className="absolute mr-auto scale-x-[-1] opacity-40 filter blur-xs portrait:hidden"
                 />
               </div>
 

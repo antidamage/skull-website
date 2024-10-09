@@ -34,7 +34,7 @@ export default function RootLayout({
 
           <header className="pt-10 flex-1 w-screen">
             <object data="/i/logo05.svg" type="image/svg+xml" className="object-contain landscape:w-6/12 max-w-screen-lg">
-              <img src="/i/logo05.png" />
+              <img src="/i/logo05.png" className="object-contain landscape:w-6/12 max-w-screen-lg" />
             </object>
             <Menu />
           </header>

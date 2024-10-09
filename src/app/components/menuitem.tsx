@@ -14,14 +14,15 @@ export default function MenuItem({ slug, name, highlight }: { slug: string, name
     return (<>
         <a href={`/${slug}`} className={`
                 text-nowrap
-                mx-10
+                mx-2
                 portrait:p-2
-                portrait:ml-10
+                portrait:ml-5
                 [&.active]:text-gray-700
                 [&.active]:bg-gray-200
                 rounded
                 pl-1
                 pr-1
+                text-lg
                 ${currentSlug === slug ? 'active' : ''}
             `}>{name}</a >
     </>);

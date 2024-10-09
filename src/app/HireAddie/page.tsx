@@ -10,8 +10,8 @@ const poppins = Poppins({ subsets: ['latin'], weight: ["400"], variable: '--font
 
 export default function HireAddie({ }: {}) {
     return (<>
-        <div className="w-screen landscape:inline-flex landscape:justify-end portrait:p-10">
-            <div className="landscape:inline-flex landscape:-mt-7">
+        <div className="landscape:inline-flex landscape:justify-end portrait:p-10">
+            <div className="landscape:inline-flex landscape:mt-2">
 
                 <div className="landscape:p-0 landscape:mt-10 portrait:m-5 portait:align-center bg-gray-700 pr-10 rounded-lg object-cover">
                     <Image

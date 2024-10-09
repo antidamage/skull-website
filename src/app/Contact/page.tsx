@@ -4,7 +4,7 @@ import DefaultContent from '../components/DefaultContent';
 export default function Contact({ }: {}) {
     return (<>
         <DefaultContent />
-        <div className="flex-block justify-end ml-auto ps-10 landscape:-mt-7 leading-none tracking-tight font-bold text-nowrap text-2xl portrait:p-10">
+        <div className="flex-block justify-end ml-auto ps-10 landscape:mt-2 leading-none tracking-tight font-bold text-nowrap text-2xl portrait:p-10">
             <p className="ps-10 leading-none tracking-tight font-bold text-2xl text-nowrap flex-nowrap">Adeline Cook<br />
                 <a className="hover:text-emerald-200 text-nowrap flex-nowrap flex-inline" href="mailto:adeline@skull.nz">
                     adeline@skull.nz

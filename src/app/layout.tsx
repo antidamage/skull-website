@@ -37,7 +37,7 @@ export default function RootLayout({
             <Menu />
           </header>
 
-          <main className="items-top inline-flex w-screen">
+          <main className="items-top inline-flex max-w-screen-2xl">
             {children}
           </main>
 

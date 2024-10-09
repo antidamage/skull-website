@@ -5,11 +5,10 @@ import { Poppins } from 'next/font/google';
 const poppins = Poppins({ subsets: ['latin'], weight: ["400"], variable: '--font-poppins' });
 
 export default function MenuItem({ slug, name, highlight }: { slug: string, name: string, highlight: string }) {
-    const baseRoute = GetBaseRoute();
-
-    function GetBaseRoute() {
+    const currentSlug = GetSlug(0);
+    function GetSlug(level: number) {
         const paths = usePathname().split('/').filter(Boolean);
-        return `/${paths[0]}`;
+        return paths[level];
     }
 
     return (<>
@@ -23,7 +22,7 @@ export default function MenuItem({ slug, name, highlight }: { slug: string, name
                 rounded
                 pl-1
                 pr-1
-                ${baseRoute === "/" + slug ? 'active' : ''}
+                ${currentSlug === slug ? 'active' : ''}
             `}>{name}</a >
     </>);
 }

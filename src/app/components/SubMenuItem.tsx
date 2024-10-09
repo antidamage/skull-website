@@ -26,6 +26,7 @@ export default function SubMenuItem({ href, nth, disabled, children }: React.Pro
     return (<>
         <li className={`
             block
+            portrait:text-lg
             ${active}
             [&.active]:text-emerald-${nth}
             [&.active]:text-gray-800x

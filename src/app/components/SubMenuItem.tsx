@@ -19,9 +19,9 @@ export default function SubMenuItem({ href, nth, disabled, children }: React.Pro
     if (href) {
         if (Array.from(href as string)[0] === "/")
             target = "_self";
-        if (usePathname() === href)
-            active = "active";
     }
+    if (usePathname() === href as string)
+        active = "active";
 
     return (<>
         <li className={`

@@ -12,13 +12,17 @@ export default function HireAddie({ }: {}) {
     return (<>
         <div className="w-screen landscape:inline-flex landscape:justify-end portrait:p-10">
             <div className="landscape:inline-flex landscape:-mt-7">
-                <Image
-                    src="/i/addie.png"
-                    width={300}
-                    height={500}
-                    alt="Adeline Cook"
-                    className="landscape:flex-inline landscape:mt-10 object-cover rounded landcsape:mt-10 portrait:p-5 portait:align-center portrait:w-screen"
-                />
+
+                <div className="landscape:p-0 landscape:mt-10 portrait:m-5 portait:align-center bg-gray-700 pr-10 rounded-lg object-cover">
+                    <Image
+                        src="/i/addie.png"
+                        width={300}
+                        height={500}
+                        alt="Adeline Cook"
+                        className="object-cover rounded-lg"
+                    />
+                </div>
+
                 <p className={`max-w-prose text-pretty ps-10 tracking-widest text-s font-thin ${poppins.className}`}>
                     Adeline is a game developer who is all about turning caffeine and code into epic adventures. With over a decade of Unreal Engine wizardry, she's here to make your game dreams come true — whether it's crafting jaw-dropping mechanics, fine-tuning immersive worlds, or bringing those “wouldn't it be cool if...” moments to life. Let's team up and create something unforgettable. Ready to hit start? 🎮✨
                     <br /><br />

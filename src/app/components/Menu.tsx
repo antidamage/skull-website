@@ -1,4 +1,3 @@
-'use client';
 import MenuItem from './MenuItem';
 
 import { Poppins } from 'next/font/google';

@@ -1,13 +1,16 @@
 'use client';
+import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
 interface SubMenuProps {
-    href?: string,
+    submenuhref?: string,
     nth?: number,
     disabled?: boolean
 }
 
-export default function SubMenuItem({ href, nth, disabled, children }: React.PropsWithChildren<SubMenuProps>) {
+export default function SubMenuItem({ submenuhref, nth, disabled, children }: React.PropsWithChildren<SubMenuProps>) {
+    if (!submenuhref) submenuhref = "";
+
     const currentSlug = GetSlug(1);
     function GetSlug(level: number) {
         const paths = usePathname().split('/').filter(Boolean);
@@ -16,36 +19,43 @@ export default function SubMenuItem({ href, nth, disabled, children }: React.Pro
 
     let target: string = "_blank";
     let active: string = "";
-    if (href) {
-        if (Array.from(href as string)[0] === "/")
+    if (submenuhref) {
+        if (Array.from(submenuhref as string)[0] === "/")
             target = "_self";
     }
-    if (usePathname() === href as string)
+    if (usePathname() === submenuhref as string)
         active = "active";
 
-    return (<>
-        <li className={`
-            block
-            portrait:text-base
-
-            ${!disabled ?
-                `
+    if (!disabled) {
+        return (<>
+            <li className={`
+                block
+                portrait:text-base
                 portrait:border
                 portrait:border-emerald-${nth}
                 portrait:rounded
                 portrait:p-2
                 portrait:mb-2
-                ` : ``
-            }
-            ${active}
-            [&.active]:text-emerald-${nth}
-            [&.active]:text-gray-800x
-            ${!disabled && nth ? "hover:text-emerald-" + nth : ""}
-            ${disabled ? "text-gray-500" : ""}
-        `}>
-            <a href={href} target={target}>
+                ${active}
+                [&.active]:text-emerald-${nth}
+                [&.active]:text-gray-800
+                hover:text-emerald-${nth}
+            `}>
+                <Link href={submenuhref as string} target={target}>
+                    {children}
+                </Link>
+            </li >
+        </>);
+
+    } else {
+        return (<>
+            <li className={`
+                block
+                portrait:text-base
+                text-gray-500
+            `}>
                 {children}
-            </a>
-        </li >
-    </>);
+            </li >
+        </>);
+    }
 }

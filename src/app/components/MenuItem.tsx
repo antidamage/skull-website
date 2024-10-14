@@ -1,4 +1,5 @@
 'use client';
+import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
 import { Poppins } from 'next/font/google';
@@ -12,7 +13,7 @@ export default function MenuItem({ slug, name, highlight }: { slug: string, name
     }
 
     return (<>
-        <a href={`/${slug}`} className={`
+        <Link href={`/${slug}`} className={`
                 text-nowrap
                 mx-2
                 portrait:p-2
@@ -24,6 +25,6 @@ export default function MenuItem({ slug, name, highlight }: { slug: string, name
                 pr-1
                 text-lg
                 ${currentSlug === slug ? 'active' : ''}
-            `}>{name}</a >
+            `}>{name}</Link >
     </>);
 }

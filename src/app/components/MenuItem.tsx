@@ -1,19 +1,16 @@
-'use client';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
 
-import { Poppins } from 'next/font/google';
-const poppins = Poppins({ subsets: ['latin'], weight: ["400"], variable: '--font-poppins' });
+interface MenuItemProps {
+    slug: string,
+    name: string,
+    currentslug: string,
+    setActive: any
+};
 
-export default function MenuItem({ slug, name, highlight }: { slug: string, name: string, highlight: string }) {
-    const currentSlug = GetSlug(0);
-    function GetSlug(level: number) {
-        const paths = usePathname().split('/').filter(Boolean);
-        return paths[level];
-    }
-
+export default function MenuItem({ slug, name, currentslug, setActive }: MenuItemProps) {
     return (<>
-        <Link href={`/${slug}`} className={`
+        <Link
+            className={`
                 text-nowrap
                 mx-2
                 portrait:p-2
@@ -24,7 +21,11 @@ export default function MenuItem({ slug, name, highlight }: { slug: string, name
                 pl-1
                 pr-1
                 text-lg
-                ${currentSlug === slug ? 'active' : ''}
-            `}>{name}</Link >
+
+                ${currentslug == slug ? 'active' : 'inactive'}
+            `}
+            onClick={() => setActive(slug as string)}
+            href={`/${slug}`}
+        >{name}</Link>
     </>);
 }
